@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('images/galaxy-bg.gif') no-repeat center center fixed;
+  background: url('galaxy-bg.gif') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
