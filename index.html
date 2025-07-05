@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmic Calendar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="calendar-container">
+    <h1 class="title">Cosmic Calendar</h1>
+    <div class="month-nav">
+      <button id="prevMonth">←</button>
+      <h2 id="currentMonth"></h2>
+      <button id="nextMonth">→</button>
+    </div>
+    <div id="calendar" class="calendar-grid"></div>
+    <div id="eventDisplay" class="event-display-box">Select a date to view cosmic events.</div>
+  </div>
+  <script src="script.js"></script>
+  <!-- Chatbot Container -->
+<div class="chatbot-container">
+  <div class="chat-header">
+    <img src="images/planet-chatbot.png" alt="Chatbot Icon" class="chatbot-icon">
+    <span>AstroBot</span>
+    <button class="chat-toggle" onclick="toggleChat()">✖</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot-message">Hi! Ask me anything about astronomy. 🌌</div>
+  </div>
+  <div class="chat-input-container
+  ">
+    <input type="text" id="userInput" placeholder="Type your question..." onkeydown="if(event.key === 'Enter') sendMessage()">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- Chatbot Icon Button -->
+<button class="open-chat-btn" onclick="toggleChat()">💬</button>
+
+</body>
+</html>

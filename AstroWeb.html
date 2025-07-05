@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AstroWeb Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Welcome to AstroWeb 🌌</h1>
+      <p>Your portal to cosmic events and astronomical wonders</p>
+      <a href="index.html" class="explore-button">🗓️ Explore the Cosmic Calendar</a>
+    </div>
+    <img src="images/planet-chatbot.png" alt="AstroBot" class="bot-avatar" />
+  </div>
+  <!-- Chatbot Button and Window -->
+<div id="chatbot-container">
+  <img id="chatbot-icon" src="planet-chatbot.png" alt="Chatbot" title="Ask me!" />
+  <div id="chat-window" class="hidden">
+    <div id="chat-header">🌌 Cosmic Chatbot</div>
+    <div id="chat-messages"></div>
+    <div id="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Ask about the cosmos..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
